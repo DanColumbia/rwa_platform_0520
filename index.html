@@ -245,6 +245,20 @@ h1.title {
 .phase .sub { font-size: 10px; font-weight: 700; color: var(--green); margin-top: 8px; margin-bottom: 3px; text-transform: uppercase; letter-spacing: 0.4px; }
 .phase .sub.red { color: var(--red); }
 
+/* product swimlane roadmap */
+.lane { width:100%; border-collapse:separate; border-spacing:6px; table-layout:fixed; }
+.lane th { font-size:11px; font-weight:800; color:var(--ink); padding:6px 8px; text-align:center; background:var(--gray-100); border-radius:5px; }
+.lane th.corner { background:var(--ink); color:#fff; text-align:left; }
+.lane td.prod { font-size:12.5px; font-weight:800; color:var(--ink); background:var(--ink); color:#fff; padding:8px 10px; border-radius:5px; width:13%; vertical-align:middle; }
+.lane td.prod .pdesc { display:block; font-size:9.5px; font-weight:600; color:var(--lime); margin-top:2px; }
+.lane td.cell { font-size:10px; color:#333; padding:7px 8px; background:#fff; border:1.5px solid var(--gray-200); border-radius:5px; vertical-align:top; line-height:1.4; }
+.lane td.cell.lime { background:#fbffe0; border-color:var(--lime); }
+.lane td.cell.key { background:var(--lime); border-color:var(--lime); font-weight:700; }
+.lane td.cell.dim { background:var(--gray-100); color:#999; border-style:dashed; }
+.lane .milestone { display:inline-block; background:var(--ink); color:var(--lime); font-size:8.5px; font-weight:800; padding:1px 4px; border-radius:3px; margin-bottom:3px; }
+.lane .milestone.lime { background:var(--lime); color:var(--ink); }
+.lane .milestone.red { background:var(--red); color:#fff; }
+
 /* TOC list */
 .toc { display: flex; flex-direction: column; gap: 0; max-width: 760px; }
 .toc-item {
@@ -314,8 +328,8 @@ h1.title {
 }
 .lic-table th.lime-h { background: var(--lime); color: var(--ink); }
 .lic-table td {
-  padding: 4px 9px; border-bottom: 1px solid var(--gray-200);
-  vertical-align: top; line-height: 1.3; color: #333;
+  padding: 3px 8px; border-bottom: 1px solid var(--gray-200);
+  vertical-align: top; line-height: 1.28; color: #333;
 }
 .lic-table tr.sect td {
   background: var(--gray-100); font-weight: 800; color: var(--ink);
@@ -384,7 +398,7 @@ h1.title {
       </div>
       <div class="card lime-edge">
         <h3>③ 合规 Compliance</h3>
-        <p>每类资产独立合规链路、统一离岸架构。美债 USDY 同构债权；美股/ETF/大宗 凭证型；私募基金 SPC 伞形 + Professional Fund。全程不碰美国。</p>
+        <p>每类资产独立合规链路、统一开曼离岸架构。美债 USDY 同构债权；美股/ETF/大宗 凭证型；私募基金 开曼 SPC 伞形 + 注册基金。全程不碰美国。</p>
       </div>
       <div class="card lime-edge">
         <h3>④ 节奏 Phasing</h3>
@@ -404,9 +418,9 @@ h1.title {
       <div class="card dark-edge">
         <h3>关键瓶颈</h3>
         <ul>
-          <li>平台牌照：<span class="chip">BVI 完整 VASP（交易+托管）6–12 月 · 最大瓶颈</span></li>
+          <li>牌照壁垒：<span class="chip">香港 SFC 1 号牌 5–9 月 · 最大卡点</span></li>
           <li>过户代理：<span class="chip">自建权属登记系统 4–8 月</span>，与 VASP 并行咬合</li>
-          <li>资产端：成为 USDY（美债）/ 凭证型（美股）/ Professional Fund（私募），全部自营</li>
+          <li>资产端：成为 USDY（美债）/ 凭证型（美股）/ 开曼注册基金（私募），全部自营</li>
         </ul>
       </div>
     </div>
@@ -659,7 +673,7 @@ h1.title {
   <div class="section-divider">
     <div class="section-num">03</div>
     <div class="section-title">合规框架</div>
-    <div class="section-sub">每类资产独立合规链路、统一离岸架构、全程不碰美国。美债（USDY 同构）、美股/ETF/大宗（凭证型）、私募基金（SPC + Professional Fund）— 三套体系并行，共用 BVI 发行人 + VASP + 自建过户代理。</div>
+    <div class="section-sub">每类资产独立合规链路、统一开曼离岸架构、全程不碰美国。美债（USDY 同构）、美股/ETF/大宗（凭证型）、私募基金（开曼 SPC + 注册基金）— 三套体系并行，共用开曼发行人 + VASP + 自建过户代理。</div>
   </div>
   <div class="streak"></div>
   <div class="footer"><span>Confidential &amp; Proprietary</span><span>09</span></div>
@@ -671,7 +685,7 @@ h1.title {
 <div class="slide">
   <div class="brandmark"><span class="logo"></span><span class="name">Oria</span></div>
   <div class="toprule"></div>
-  <div class="toptext">美债代币化两步走：短期代销 Ondo 快速起量，长期自建通道成为 USDY —— 自营 BVI 发行人，只服务非美。</div>
+  <div class="toptext">美债代币化两步走：短期代销 Ondo 快速起量，长期自建通道成为 USDY —— 自营开曼发行人，只服务非美。</div>
   <div class="content">
     <h1 class="title">合规 · 美债代币化（短期 / 长期）</h1>
     <div class="subtitle">短期：代销 Ondo 轻资产起量 → 长期：自建通道、成为 USDY 同构发行人</div>
@@ -686,7 +700,7 @@ h1.title {
       </div>
       <div class="card lime-edge">
         <h3>长期方案 · 自建通道 <span class="chip">成为 USDY</span></h3>
-        <div class="kv"><b>发行人 ·</b> 自建 BVI 实体（与 Ondo Global Markets BVI Ltd 同构）</div>
+        <div class="kv"><b>发行人 ·</b> 自建开曼实体（结构对标 Ondo USDY 的债权模式）</div>
         <div class="kv"><b>形态 ·</b> token = 美债+银行存款支持的有担保债权（非基金份额、非直接持有）</div>
         <div class="kv"><b>豁免 ·</b> Reg S — 仅向非美人士、美国境外发行</div>
         <div class="kv"><b>底层托管 ·</b> 银行系合格托管人（外包）· <b>登记 ·</b> 自建过户代理</div>
@@ -698,11 +712,11 @@ h1.title {
       <div class="row-2" style="margin-top:4px;">
         <ul>
           <li>放弃 <b>OUSG</b>（特拉华私募基金）→ 砍掉 SEC RIA 那条线</li>
-          <li>只做 <b>USDY</b>（非美债权）→ 复用 BVI 同管辖区已验证结构</li>
+          <li>只做 <b>USDY</b>（非美债权）→ 复用开曼成熟的发行人结构</li>
         </ul>
         <ul>
           <li>不碰美国 → 砍掉 FINRA / BD / ATS / 美国过户代理整套</li>
-          <li>规模上限：Approved Fund（≤20 投资者）装不下，必须用债权发行人结构</li>
+          <li>规模上限：小型基金类别装不下散户量级，债权/凭证发行人结构才扛得住</li>
         </ul>
       </div>
     </div>
@@ -731,7 +745,7 @@ h1.title {
 <div class="slide">
   <div class="brandmark"><span class="logo"></span><span class="name">Oria</span></div>
   <div class="toprule"></div>
-  <div class="toptext">美债代币化（USDY 同构）的完整牌照体系 — 真正瓶颈是 VASP 完整牌照与自建过户代理，非银行开户。</div>
+  <div class="toptext">美债代币化（USDY 同构）的完整牌照体系 — 开曼发行 + 开曼 VASP 自营撮合托管 + 自建过户代理；真正的牌照壁垒在香港 1 号牌（见港新页）。</div>
   <div class="content">
     <h1 class="title">合规 · 美债代币化牌照体系</h1>
     <div class="subtitle" style="margin-bottom:4px;">按板块拆解 · 作用 / 限制 / 时间 / 费用（数量级估计，非法律意见或报价）</div>
@@ -745,18 +759,20 @@ h1.title {
         <th style="width:22%;">作用</th>
         <th style="width:20%;">限制/约束</th>
         <th style="width:10%;">时间</th>
-        <th style="width:16%;">费用（一次性 / 年度）</th>
+        <th style="width:11%;">一次性费用</th>
+        <th style="width:10%;">年度费用</th>
       </tr>
 
-      <tr class="sect"><td colspan="7">发行端</td></tr>
+      <tr class="sect"><td colspan="8">发行端</td></tr>
       <tr>
         <td>发行端</td>
-        <td class="lic">BVI 发行人实体</td>
+        <td class="lic">开曼发行人实体</td>
         <td><span class="way self">自办牌照</span></td>
         <td>发"美债+银行存款支持的有担保债权"token（USDY 同构）</td>
-        <td>票据条款须经律师确认不触发 SIBA 投资业务牌照；发行人对名册负法律责任</td>
+        <td>票据条款须经律师确认不触发开曼投资业务牌照；发行人对名册负法律责任</td>
         <td>6–10 周</td>
-        <td>$150–400K / $50–150K</td>
+        <td>$110–280K</td>
+        <td>$20–50K</td>
       </tr>
       <tr>
         <td>发行端</td>
@@ -765,7 +781,8 @@ h1.title {
         <td>美国证券法安全港，豁免 SEC 注册</td>
         <td>用了即永不碰美国人；不豁免销售所在国当地证券法</td>
         <td>8–12 周</td>
-        <td>$50–150K / 变更时更新</td>
+        <td>$50–150K</td>
+        <td>变更时更新</td>
       </tr>
       <tr>
         <td>发行端</td>
@@ -774,30 +791,33 @@ h1.title {
         <td>对标 USDY，美元货币服务环节的合规注册</td>
         <td>是注册非牌照，但带 BSA/AML 持续义务；是否触发由律师判断</td>
         <td>1–2 周 + 体系 4–8 周</td>
-        <td>$20–60K / $30–80K</td>
+        <td>$20–60K</td>
+        <td>$30–80K</td>
       </tr>
 
-      <tr class="sect"><td colspan="7">平台端（你的关键路径与成本大头）</td></tr>
+      <tr class="sect"><td colspan="8">平台端（开曼 VASP）</td></tr>
       <tr>
         <td>平台端</td>
-        <td class="lic key">BVI 完整 VASP·交易平台<span class="tag red">最重</span></td>
+        <td class="lic key">开曼 VASP·交易平台</td>
         <td class="key"><span class="way self">自办牌照</span></td>
         <td class="key">自营撮合二级交易的合法依据</td>
         <td class="key">不能走注册制；需合规官、授权代表、auditor、交易系统风控与技术审查、持续报告</td>
-        <td class="key"><b>6–12 个月</b></td>
-        <td class="key">$300K–$1M+ / $200–500K+</td>
+        <td class="key">6–12 个月</td>
+        <td class="key">$300K–1M+</td>
+        <td class="key">$200–500K+</td>
       </tr>
       <tr>
         <td>平台端</td>
-        <td class="lic key">BVI VASP·托管类别</td>
+        <td class="lic key">开曼 VASP·托管类别</td>
         <td class="key"><span class="way self">自办牌照</span></td>
         <td class="key">托管用户链上 token / 私钥</td>
         <td class="key">底层美债资产托管不在此列（外包给银行）</td>
         <td class="key">与上并行</td>
-        <td class="key">增量 $50–150K / 并入上方</td>
+        <td class="key">增量 $50–150K</td>
+        <td class="key">并入上方</td>
       </tr>
 
-      <tr class="sect"><td colspan="7">过户代理（必需 · 自建）</td></tr>
+      <tr class="sect"><td colspan="8">过户代理（必需 · 自建）</td></tr>
       <tr>
         <td>过户代理</td>
         <td class="lic key">自建权属登记系统<span class="tag">自建</span></td>
@@ -805,10 +825,11 @@ h1.title {
         <td class="key">维护几十上百万债权人名册，与链上 token 实时对账</td>
         <td class="key">发行人责任无法外包；因不碰美国，无需美国 SEC 过户代理注册</td>
         <td class="key">4–8 个月</td>
-        <td class="key">$300–800K / $100–300K</td>
+        <td class="key">$300–800K</td>
+        <td class="key">$100–300K</td>
       </tr>
 
-      <tr class="sect"><td colspan="7">底层托管 &amp; 销售端</td></tr>
+      <tr class="sect"><td colspan="8">底层托管 &amp; 销售端</td></tr>
       <tr>
         <td>底层托管</td>
         <td class="lic">银行系合格托管人</td>
@@ -816,7 +837,8 @@ h1.title {
         <td>持有底层美债/美股（外包，不持牌）</td>
         <td>需通过托管行 KYB/AML 尽调开户（较慢）</td>
         <td>10–14 周</td>
-        <td>无牌照费 / 数 bps·AUM</td>
+        <td>无牌照费</td>
+        <td>数 bps·AUM</td>
       </tr>
       <tr>
         <td>销售端</td>
@@ -826,6 +848,7 @@ h1.title {
         <td>散户无限制仅限 LATAM/东南亚/非洲；不碰欧美发达市场散户</td>
         <td>每国 1–4 个月</td>
         <td>每国 $30–150K</td>
+        <td>按国维持</td>
       </tr>
 
       <tr class="excl">
@@ -836,6 +859,7 @@ h1.title {
         <td>这是本方案最大的成本节省点</td>
         <td>—</td>
         <td>省数百万美元 + 6–12 月</td>
+        <td>—</td>
       </tr>
     </table>
   </div>
@@ -862,29 +886,32 @@ h1.title {
         <th style="width:23%;">作用</th>
         <th style="width:21%;">限制/约束</th>
         <th style="width:9%;">时间</th>
-        <th style="width:13%;">费用（一次性 / 年度）</th>
+        <th style="width:11%;">一次性费用</th>
+        <th style="width:9%;">年度费用</th>
       </tr>
 
-      <tr class="sect"><td colspan="7">复用美债已有（无需重复搭建）</td></tr>
+      <tr class="sect"><td colspan="8">复用美债已有（无需重复搭建）</td></tr>
       <tr>
         <td>复用</td>
-        <td class="lic">BVI 发行人 + VASP（交易+托管）+ 自建过户代理 + Reg S 边界</td>
+        <td class="lic">开曼发行人 + VASP（交易+托管）+ 自建过户代理 + Reg S 边界</td>
         <td><span class="way self">已自办</span></td>
         <td>增设美股凭证产品线；二级交易与名册系统直接扩展覆盖</td>
         <td>同样不碰美国人；同样地理围栏 + 钱包白名单</td>
         <td>已就位</td>
         <td>增量极小</td>
+        <td>增量极小</td>
       </tr>
 
-      <tr class="sect"><td colspan="7">美股特有的增量</td></tr>
+      <tr class="sect"><td colspan="8">美股特有的增量</td></tr>
       <tr>
         <td>发行端</td>
-        <td class="lic key">自建持股实体（BVI/瑞士）<span class="tag">自建</span></td>
+        <td class="lic key">自建持股实体（开曼/瑞士）<span class="tag">自建</span></td>
         <td class="key"><span class="way self">自办</span></td>
         <td class="key">持有真实美股/ETF/ETP，做 1:1 抵押担保 token</td>
         <td class="key">实体归你；但实体本身无市场准入，须通过持牌券商开机构账户</td>
         <td class="key">6–10 周</td>
-        <td class="key">$100–300K / $50–150K</td>
+        <td class="key">$100–300K</td>
+        <td class="key">$50–150K</td>
       </tr>
       <tr>
         <td>底层托管</td>
@@ -893,7 +920,8 @@ h1.title {
         <td class="key">提供美股市场准入与底层资产托管 · 1:1 抵押</td>
         <td class="key">成熟通道=Alpaca 类持牌 broker（fintech）；老牌品牌=瑞士持牌银行/大行，门槛更高更慢</td>
         <td class="key">8–14 周（开户尽调）</td>
-        <td class="key">无牌照费 / 托管费按 AUM</td>
+        <td class="key">无牌照费</td>
+        <td class="key">托管费按 AUM</td>
       </tr>
       <tr>
         <td>发行端</td>
@@ -903,6 +931,7 @@ h1.title {
         <td>需律师起草；xStocks 即用此三方协议</td>
         <td>随发行架构</td>
         <td>并入律师费</td>
+        <td>—</td>
       </tr>
       <tr>
         <td>运营</td>
@@ -912,9 +941,10 @@ h1.title {
         <td>行业标准（xStocks/Ondo 同）；直接派息会触发更复杂派息合规，故不做</td>
         <td>系统内置</td>
         <td>并入平台开发</td>
+        <td>—</td>
       </tr>
 
-      <tr class="sect"><td colspan="7">销售端 &amp; 主动放弃</td></tr>
+      <tr class="sect"><td colspan="8">销售端 &amp; 主动放弃</td></tr>
       <tr>
         <td>销售端</td>
         <td class="lic">各市场凭证定性（逐国）</td>
@@ -923,6 +953,7 @@ h1.title {
         <td>EU 视为 MiFID 证券需招股书；但已决定不碰欧美发达市场散户，主攻宽松市场</td>
         <td>每国 1–4 个月</td>
         <td>每国 $30–150K</td>
+        <td>按国维持</td>
       </tr>
       <tr class="excl">
         <td>已放弃</td>
@@ -932,6 +963,7 @@ h1.title {
         <td>与"不碰美国"冲突且不可行 → 主动舍弃，只做经济敞口</td>
         <td>—</td>
         <td>省下整套美国证券合规</td>
+        <td>—</td>
       </tr>
     </table>
     <p class="note" style="margin-top:6px;">注：美国大宗商品 ETP（如 GLD）本质是交易所交易证券，与美股完全同构，不触发 CFTC 商品现货/期货监管。</p>
@@ -945,7 +977,7 @@ h1.title {
 <div class="slide">
   <div class="brandmark"><span class="logo"></span><span class="name">Oria</span></div>
   <div class="toprule"></div>
-  <div class="toptext">私募基金代币化（SPC 伞形 + Professional Fund）—— 纯通道、责任在 GP；托管放独立持牌主体，平台保持轻。</div>
+  <div class="toptext">私募基金代币化（开曼 SPC 伞形 + 注册基金）—— 纯通道、责任在 GP；托管放独立持牌主体，平台保持轻。</div>
   <div class="content">
     <h1 class="title">合规 · 私募基金代币化牌照体系</h1>
     <div class="subtitle" style="margin-bottom:4px;">三主体隔离 · 一级仅合格投资者、二级拆分给中小投资人 · GP 永远碰不到底层资产</div>
@@ -959,18 +991,20 @@ h1.title {
         <th style="width:22%;">作用</th>
         <th style="width:21%;">限制/约束</th>
         <th style="width:9%;">时间</th>
-        <th style="width:14%;">费用（一次性 / 年度）</th>
+        <th style="width:11%;">一次性费用</th>
+        <th style="width:9%;">年度费用</th>
       </tr>
 
-      <tr class="sect"><td colspan="7">载体层（GP 负责，非你）</td></tr>
+      <tr class="sect"><td colspan="8">载体层（GP 负责，非你）</td></tr>
       <tr>
         <td>载体</td>
-        <td class="lic">BVI SPC 伞形 + Professional Fund</td>
+        <td class="lic">开曼 SPC 伞形 + 注册私募基金/共同基金</td>
         <td><span class="way partner">GP 办理</span></td>
         <td>每个基金=独立 portfolio，破产隔离；你的基金 + 外部 GP 借用各为独立组合</td>
-        <td>弃用 Approved Fund（≤20 投资者装不下）；Professional Fund 一级仅专业投资者、$100K 起</td>
-        <td>FSC 认可 1–2 个月（含 21 天可先运营窗口）</td>
-        <td>每基金 $30–80K / $20–50K</td>
+        <td>开曼《私募基金法》/《共同基金法》注册；一级仅专业/合格投资者；2026 新法明确"数字投资 token"定义</td>
+        <td>CIMA 注册 1–2 个月</td>
+        <td>每基金 $40–100K</td>
+        <td>$30–60K</td>
       </tr>
       <tr>
         <td>载体</td>
@@ -980,17 +1014,19 @@ h1.title {
         <td>由 GP 安排；Manager 即 GP，你不担任 → 纯通道核心</td>
         <td>随基金设立</td>
         <td>GP 承担</td>
+        <td>GP 承担</td>
       </tr>
 
-      <tr class="sect"><td colspan="7">托管主体（你控制的独立持牌主体 · 方案甲）</td></tr>
+      <tr class="sect"><td colspan="8">托管主体（你控制的独立持牌主体 · 方案甲）</td></tr>
       <tr>
         <td>托管主体</td>
-        <td class="lic key">SIBA 投资业务牌照·托管类<span class="tag red">私募特有</span></td>
+        <td class="lic key">开曼 SIBA 证券投资业务牌照·托管类<span class="tag red">私募特有</span></td>
         <td class="key"><span class="way self">自办牌照</span></td>
         <td class="key">托管私募基金底层资产、把关资产真实性 → Oria 品牌护城河</td>
-        <td class="key">SIBA Cat.4-B（基金托管）；须功能独立于 GP/Administrator（独立主体天然满足）</td>
+        <td class="key">开曼 SIBA 项下证券投资业务（托管）；须功能独立于 GP/Administrator（独立主体天然满足）</td>
         <td class="key">2–4 个月</td>
-        <td class="key">$150–400K / $80–200K</td>
+        <td class="key">$150–400K</td>
+        <td class="key">$80–200K</td>
       </tr>
       <tr>
         <td>托管主体</td>
@@ -1000,9 +1036,10 @@ h1.title {
         <td class="key">你的责任田，无法甩给 GP；不查 GP 投资能力/募资（归 GP）</td>
         <td class="key">持续</td>
         <td class="key">并入托管运营</td>
+        <td class="key">并入托管运营</td>
       </tr>
 
-      <tr class="sect"><td colspan="7">平台主体（VASP，复用美债已有，保持轻）</td></tr>
+      <tr class="sect"><td colspan="8">平台主体（VASP，复用美债已有，保持轻）</td></tr>
       <tr>
         <td>平台</td>
         <td class="lic">VASP·交易平台 + 链上 token 托管</td>
@@ -1011,9 +1048,10 @@ h1.title {
         <td>不碰底层私募资产托管（在托管主体）→ 平台责任不增加</td>
         <td>已就位</td>
         <td>增量极小</td>
+        <td>增量极小</td>
       </tr>
 
-      <tr class="sect"><td colspan="7">做市主体（独立，不自营）&amp; 投资者策略</td></tr>
+      <tr class="sect"><td colspan="8">做市主体（独立，不自营）&amp; 投资者策略</td></tr>
       <tr>
         <td>做市主体</td>
         <td class="lic">独立做市/流动性主体</td>
@@ -1021,6 +1059,7 @@ h1.title {
         <td>提供流动性池；平台保持中立撮合、不下场自营</td>
         <td>可能需做市商/交易商资质 + 关联披露；与平台隔离避免利益冲突</td>
         <td>视法域</td>
+        <td>单独评估</td>
         <td>单独评估</td>
       </tr>
       <tr>
@@ -1031,6 +1070,7 @@ h1.title {
         <td>风险：防被穿透认定为"变相公开发售"，一级持有人须真实独立</td>
         <td>—</td>
         <td>逐市场合规</td>
+        <td>—</td>
       </tr>
 
       <tr class="excl">
@@ -1040,6 +1080,7 @@ h1.title {
         <td>全部在 GP —— "只保资产真实性、不保投资风险"</td>
         <td>GP 跑路：投资可能亏（市场风险），但 GP 碰不到底层资产（在你托管主体）</td>
         <td>—</td>
+        <td>GP 承担</td>
         <td>GP 承担</td>
       </tr>
     </table>
@@ -1053,10 +1094,10 @@ h1.title {
 <div class="slide">
   <div class="brandmark"><span class="logo"></span><span class="name">Oria</span></div>
   <div class="toprule"></div>
-  <div class="toptext">面向港新机构客户的销售牌照 —— BVI 为发行主轴，港新仅作机构销售入口；只服务专业投资者，不碰港新散户。</div>
+  <div class="toptext">面向港新机构客户的销售牌照 —— 开曼为发行主轴，港新仅作机构销售入口；香港 1 号牌是最大卡点，也是我们最强的牌照壁垒。</div>
   <div class="content">
     <h1 class="title">合规 · 港新机构销售牌照体系</h1>
-    <div class="subtitle" style="margin-bottom:4px;">BVI 主轴发行 + 港新销售落地 · 客户：银行 / 基金 / 家办 / 信托（均为专业投资者）</div>
+    <div class="subtitle" style="margin-bottom:4px;">开曼主轴发行 + 港新销售落地 · 客户：银行 / 基金 / 家办 / 信托（均为专业投资者）</div>
     <div style="margin-bottom:6px; font-size:10px; color:#666;">办理方式图例：<span class="way self">自办牌照</span> 自己申请 · <span class="way partner">合作/借道</span> 借道持牌方 · <span class="way build">自收牌照</span> 收购现成持牌法团 · <span class="way none">不做</span></div>
 
     <table class="lic-table" style="margin-top:0;">
@@ -1067,50 +1108,55 @@ h1.title {
         <th style="width:22%;">作用</th>
         <th style="width:21%;">限制/约束</th>
         <th style="width:9%;">时间</th>
-        <th style="width:12%;">费用（一次性 / 年度）</th>
+        <th style="width:11%;">一次性费用</th>
+        <th style="width:9%;">年度费用</th>
       </tr>
 
-      <tr class="sect"><td colspan="7">发行主轴（不动，沿用前述）</td></tr>
+      <tr class="sect"><td colspan="8">发行主轴（不动，沿用前述）</td></tr>
       <tr>
         <td>主轴</td>
-        <td class="lic">BVI 发行人 + VASP + 自建过户代理</td>
+        <td class="lic">开曼发行人 + VASP + 自建过户代理</td>
         <td><span class="way self">已自办</span></td>
         <td>发行 USDY 同构美债、自营撮合与托管、维护名册 — 收益与风险自持</td>
-        <td>发行与产品主轴留在 BVI；港新仅作销售入口，不迁发行地</td>
+        <td>发行与产品主轴留在开曼；港新仅作销售入口，不迁发行地</td>
         <td>已就位</td>
+        <td>见美债牌照页</td>
         <td>见美债牌照页</td>
       </tr>
 
-      <tr class="sect"><td colspan="7">香港 · 机构销售（首选落地，分两阶段）</td></tr>
+      <tr class="sect"><td colspan="8">香港 · 机构销售（首选落地，分两阶段）</td></tr>
       <tr>
         <td>香港</td>
         <td class="lic key">借道持牌方 / EAM 起步<span class="tag">阶段一</span></td>
         <td class="key"><span class="way partner">合作/借道</span></td>
-        <td class="key">香港持牌银行/券商/家办作为专业投资者主体，做 KYB 后将 BVI 产品配置给其客户</td>
+        <td class="key">香港持牌银行/券商/家办作为专业投资者主体，做 KYB 后将开曼产品配置给其客户</td>
         <td class="key">零牌照增量、快；触达"持牌方的客户"，对终端掌控较弱</td>
         <td class="key">即时</td>
+        <td class="key">无</td>
         <td class="key">分成/返佣</td>
       </tr>
       <tr>
         <td>香港</td>
-        <td class="lic key">SFC Type 1（证券交易）<span class="tag">阶段二</span></td>
-        <td class="key"><span class="way build">自收牌照</span></td>
-        <td class="key">自持分销资质，直接向香港专业投资者分销 BVI 产品，掌控分销链路</td>
-        <td class="key">仅向专业投资者只需事先通知 SFC；须 ≥1 名常驻香港 RO（含董事）；收购比自建快</td>
-        <td class="key">收购 3–6 个月</td>
-        <td class="key">收购 $1–5M / 合规 $0.3–1M</td>
+        <td class="lic key">SFC Type 1（证券交易）<span class="tag red">最大卡点</span></td>
+        <td class="key"><span class="way build">自收</span> <span class="way self">/自建</span></td>
+        <td class="key">自持分销资质，直接向香港专业投资者分销开曼产品，掌控分销链路 — 牌照即竞争壁垒</td>
+        <td class="key">仅向专业投资者只需事先通知 SFC；须 ≥2 名 RO（≥1 名常驻香港督导、含董事）；最低资本约 HK$5M；自建从零最慢</td>
+        <td class="key">自建 5–9 个月 / 收购 3–6 个月</td>
+        <td class="key">自建 $0.85–1.7M / 收购 $1.05–5.15M</td>
+        <td class="key">$0.56–1.12M</td>
       </tr>
       <tr>
         <td>香港</td>
         <td class="lic">SFC Type 7（自动化交易）</td>
         <td><span class="way none">视情况</span></td>
         <td>仅当二级交易在香港境内平台发生才需要</td>
-        <td>若二级交易都在 BVI 平台、香港只做一级分销，Type 1 即可（须律师确认）</td>
+        <td>若二级交易都在开曼平台、香港只做一级分销，Type 1 即可（须律师确认）</td>
         <td>—</td>
         <td>视是否需要</td>
+        <td>—</td>
       </tr>
 
-      <tr class="sect"><td colspan="7">新加坡 · 机构销售（第二步，可暂缓）</td></tr>
+      <tr class="sect"><td colspan="8">新加坡 · 机构销售（第二步，可暂缓）</td></tr>
       <tr>
         <td>新加坡</td>
         <td class="lic">MAS CMS（资本市场服务）</td>
@@ -1118,26 +1164,29 @@ h1.title {
         <td>向新加坡机构/合格投资者分销证券型 token 的资质</td>
         <td>每活动 ≥2 名新加坡境内代表；私募配售豁免完整招股书；技术中立、穿透实质</td>
         <td>收购/借道 3–6 个月</td>
-        <td>$1–4M / $0.3–0.8M</td>
+        <td>自建 $1–4M / 收购 $2–6M</td>
+        <td>$0.3–0.8M</td>
       </tr>
       <tr>
         <td>新加坡</td>
         <td class="lic">MAS RMO（认可市场运营者）</td>
         <td><span class="way none">暂不做</span></td>
         <td>仅当在新加坡境内运营二级交易市场才需要</td>
-        <td>二级交易留在 BVI 平台则无需；新加坡仅做一级机构分销</td>
+        <td>二级交易留在开曼平台则无需；新加坡仅做一级机构分销</td>
         <td>—</td>
         <td>视是否需要</td>
+        <td>—</td>
       </tr>
 
       <tr class="excl">
         <td>不做</td>
         <td class="lic">港新散户 / 把港新作发行主轴</td>
         <td><span class="way none">不做</span></td>
-        <td>港新散户需逐个 token 审批/完整招股书；发行主轴留 BVI 才能保住散户主战场与速度</td>
+        <td>港新散户需逐个 token 审批/完整招股书；发行主轴留开曼维持速度与成本可控</td>
         <td>港新只服务专业投资者；散户主战场在 LATAM/东南亚/非洲</td>
         <td>—</td>
         <td>避开 DigiFT 式重监管</td>
+        <td>—</td>
       </tr>
     </table>
   </div>
@@ -1210,7 +1259,7 @@ h1.title {
   <div class="section-divider">
     <div class="section-num">05</div>
     <div class="section-title">业务节奏</div>
-    <div class="section-sub">五阶段 18 个月路线图。先美债、再 U 卡、再美股/ETF/大宗、再私募 PE/VC、最后基建化开放 oContract。每个阶段业务线 + 合规线同步推进。</div>
+    <div class="section-sub">18 个月路线图按产品线展开：美债（代销 → 自建通道 → 切换自持）为主线，U 卡、美股/ETF/大宗、私募 PE/VC 依次接入，合规壁垒（香港 1 号牌）贯穿始终。</div>
   </div>
   <div class="streak"></div>
   <div class="footer"><span>Confidential &amp; Proprietary</span><span>17</span></div>
@@ -1222,96 +1271,68 @@ h1.title {
 <div class="slide">
   <div class="brandmark"><span class="logo"></span><span class="name">Oria</span></div>
   <div class="toprule"></div>
-  <div class="toptext">五阶段路线图 — 每阶段清晰定义业务线与合规线两条并行推进的工作流。</div>
+  <div class="toptext">业务节奏按产品线展开 — 早期代销已合规的美债/美股产品（Ondo + 香港持牌机构）快速起量，再建自营发行通道切换自持；私募 / U 卡依次接入。</div>
   <div class="content">
-    <h1 class="title">业务节奏 · 五阶段路线图</h1>
-    <div class="subtitle">0 → 18 个月 · 从平台构建到基建化</div>
+    <h1 class="title">业务节奏 · 产品线路线图</h1>
+    <div class="subtitle" style="margin-bottom:8px;">0 → 18 个月 · 按产品类型展开 · 美债为主线（代销 → 自建通道 → 切换自持）</div>
 
-    <div class="phase-strip" style="margin-top:14px;">
-      <div class="phase">
-        <div class="pn">PHASE 1</div>
-        <div class="pt">平台构建期</div>
-        <div class="pd">0–3 个月</div>
-        <div class="sub">业务线</div>
-        <ul>
-          <li>短期代销 Ondo · 快速上线起量</li>
-          <li>接入短中期 (≤5y) 美国国债</li>
-          <li>美债高收益做活期 · 拉种子用户</li>
-          <li>搭建 Oria + oContract 架构</li>
-          <li>RWA 二级交易能力</li>
-        </ul>
-        <div class="sub">合规线</div>
-        <ul>
-          <li>代销期零发行牌照 · 不签排他</li>
-          <li>启动自建 BVI 发行人 + VASP</li>
-        </ul>
-      </div>
-      <div class="phase">
-        <div class="pn">PHASE 2</div>
-        <div class="pt">平台起量期</div>
-        <div class="pd">3–6 个月</div>
-        <div class="sub">业务线</div>
-        <ul>
-          <li>切换自持发行 · 成为 USDY 同构</li>
-          <li>接入 U 卡 · 快速拉客户规模</li>
-          <li>开放抵押借贷 (P2P 撮合)</li>
-          <li>港新机构借道持牌方销售</li>
-        </ul>
-        <div class="sub">合规线</div>
-        <ul>
-          <li>美债牌照体系完成 + 自建过户代理</li>
-          <li>SPC 伞形 + Professional Fund 就绪</li>
-          <li>托管主体 SIBA 牌照启动</li>
-        </ul>
-      </div>
-      <div class="phase">
-        <div class="pn">PHASE 3</div>
-        <div class="pt">产品补全期</div>
-        <div class="pd">6–9 个月</div>
-        <div class="sub">业务线</div>
-        <ul>
-          <li>推出美股 RWA 资产</li>
-          <li>推出 ETF RWA 资产</li>
-          <li>推出大宗商品 ETP RWA 资产</li>
-        </ul>
-        <div class="sub">合规线</div>
-        <ul>
-          <li>自建持股实体 + 老牌券商托管</li>
-          <li>凭证型 · 复用 BVI + VASP 架构</li>
-        </ul>
-      </div>
-      <div class="phase">
-        <div class="pn">PHASE 4</div>
-        <div class="pt">平台稳定期</div>
-        <div class="pd">9–12 个月</div>
-        <div class="sub">业务线</div>
-        <ul>
-          <li>接入 PE / VC / 私募信贷</li>
-          <li>高风险类高利润资产</li>
-          <li>全量资产 token 开放二级交易</li>
-        </ul>
-        <div class="sub">合规线</div>
-        <ul>
-          <li>托管主体 SIBA 牌照完成</li>
-          <li>私募基金通道全量运营</li>
-          <li>港新自收 Type 1 / CMS 销售牌照</li>
-        </ul>
-      </div>
-      <div class="phase" style="border-top-color:var(--ink);">
-        <div class="pn">PHASE 5</div>
-        <div class="pt">平台基建化</div>
-        <div class="pd">12–18 个月</div>
-        <div class="sub">业务线</div>
-        <ul>
-          <li>oContract <b>开放给全网</b></li>
-        </ul>
-        <div class="sub red">为什么不提前？</div>
-        <ul>
-          <li>品牌未立时，资产出问题会牵连平台声誉</li>
-          <li>必须等 Oria 信任建立后再开放底层</li>
-        </ul>
-      </div>
-    </div>
+    <table class="lane">
+      <tr>
+        <th class="corner">产品线 / 阶段</th>
+        <th>M0–3 构建期</th>
+        <th>M3–6 起量期</th>
+        <th>M6–9 补全期</th>
+        <th>M9–12 稳定期</th>
+        <th>M12–18 基建化</th>
+      </tr>
+
+      <tr>
+        <td class="prod">美债<span class="pdesc">主线 · USDY 同构</span></td>
+        <td class="cell key"><span class="milestone">代销起点</span>代销已合规美债产品（Ondo USDY + 香港持牌机构产品）快速上线；做活期拉种子用户；不签排他</td>
+        <td class="cell lime"><span class="milestone lime">通道建立</span>自营开曼发行通道建成；<b>切换自持发行</b>、收益不再打折</td>
+        <td class="cell lime">自持产品全面替换代销；过户代理名册稳定运行</td>
+        <td class="cell">美债开放二级交易 + 抵押借贷；港新机构分销放量</td>
+        <td class="cell">美债作为平台压舱资产；规模化、低成本运营</td>
+      </tr>
+
+      <tr>
+        <td class="prod">美股 / ETF / 大宗<span class="pdesc">凭证型</span></td>
+        <td class="cell key"><span class="milestone">代销起点</span>代销香港持牌机构的美股代币化产品快速上线（按各产品投资者限制分发）</td>
+        <td class="cell lime">代销放量；启动自建持股实体筹备</td>
+        <td class="cell key"><span class="milestone">自建上线</span>自建持股实体 + 老牌券商托管；推出自有美股/ETF/大宗 ETP 凭证 token</td>
+        <td class="cell lime">凭证型资产开放二级交易；分红再投资进净值</td>
+        <td class="cell">复用开曼 + VASP 架构，逐步扩品种</td>
+      </tr>
+
+      <tr>
+        <td class="prod">私募基金<span class="pdesc">SPC 通道</span></td>
+        <td class="cell dim">—</td>
+        <td class="cell lime"><span class="milestone lime">架构就绪</span>开曼 SPC 伞形 + 注册基金就绪；托管主体 SIBA 牌照启动</td>
+        <td class="cell">首批基金接入（自有 + 外部 GP 借用通道）</td>
+        <td class="cell key"><span class="milestone">通道全量</span>托管主体 SIBA 完成；PE/VC/私募信贷全量；二级拆分给中小投资人</td>
+        <td class="cell">私募通道基建化；做市主体独立运营</td>
+      </tr>
+
+      <tr>
+        <td class="prod">U 卡<span class="pdesc">支付 · 长尾入口</span></td>
+        <td class="cell dim">—</td>
+        <td class="cell key"><span class="milestone">接入上线</span>接入 U 卡；高频支付带低频活期理财，快速拉客户规模</td>
+        <td class="cell lime">U 卡 + 活期理财闭环；KOL 本地化推广</td>
+        <td class="cell">U 卡规模化，沉淀长尾资金进入收益类产品</td>
+        <td class="cell">支付场景基建化，成为长尾获客主入口</td>
+      </tr>
+
+      <tr>
+        <td class="prod" style="background:var(--green);">合规壁垒<span class="pdesc" style="color:#fff;">牌照主线</span></td>
+        <td class="cell"><span class="milestone red">长周期启动</span>启动开曼发行人 + VASP；<b>启动香港 1 号牌申请</b>（最大卡点）</td>
+        <td class="cell">美债牌照体系完成 + 自建过户代理；港新借道持牌方先行销售</td>
+        <td class="cell">VASP 交易+托管就位；持股实体合规落地</td>
+        <td class="cell lime"><span class="milestone lime">壁垒成型</span>香港 1 号牌持牌完成 · 自营机构分销</td>
+        <td class="cell">oContract 开放全网（待品牌与信任建立后）</td>
+      </tr>
+    </table>
+
+    <p class="note" style="margin-top:8px;">早期代销策略：M0–3 同时代销已合规的美债与美股产品（Ondo USDY + 香港持牌机构产品），零牌照负担、快速起量并丰富货架；M3–6 起自建发行通道、逐步切换自持（收益与风险自控）。私募/U 卡在通道与合规就位后接入。香港 1 号牌为长周期最大卡点，第一阶段即启动。</p>
   </div>
   <div class="footer"><span>Confidential &amp; Proprietary</span><span>18</span></div>
 </div>
