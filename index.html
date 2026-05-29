@@ -258,6 +258,10 @@ h1.title {
 .lane .milestone { display:inline-block; background:var(--ink); color:var(--lime); font-size:8.5px; font-weight:800; padding:1px 4px; border-radius:3px; margin-bottom:3px; }
 .lane .milestone.lime { background:var(--lime); color:var(--ink); }
 .lane .milestone.red { background:var(--red); color:#fff; }
+.lane td.aum { background:var(--lime); color:var(--ink); font-weight:800; text-align:center; font-size:15px; padding:8px 6px; border-radius:5px; }
+.lane td.aum .aum-lbl { display:block; font-size:9px; font-weight:700; color:#666; margin-top:2px; text-transform:uppercase; letter-spacing:0.4px; }
+.lane td.prod.aum-lbl-cell { background:var(--green); color:#fff; }
+.lane td.aum.empty { background:var(--gray-100); color:#999; }
 
 /* TOC list */
 .toc { display: flex; flex-direction: column; gap: 0; max-width: 760px; }
@@ -398,11 +402,11 @@ h1.title {
       </div>
       <div class="card lime-edge">
         <h3>③ 合规 Compliance</h3>
-        <p>每类资产独立合规链路、统一开曼离岸架构。美债 USDY 同构债权；美股/ETF/大宗 凭证型；私募基金 开曼 SPC 伞形 + 注册基金。全程不碰美国。</p>
+        <p>每类资产独立合规链路、统一开曼离岸架构。美债 USDY 同构债权；美股/ETF/大宗 凭证型；私募基金 开曼 SPC 伞形 + 注册基金。销售范围排除美国市场。</p>
       </div>
       <div class="card lime-edge">
         <h3>④ 节奏 Phasing</h3>
-        <p>0–3 月构建期 → 3–6 月起量 → 6–9 月补全 → 9–12 月稳定 → 12–18 月基建化。</p>
+        <p>24 个月路线图。AUM 目标：3 月 $1M → 6 月 $10M → 12 月 $100M → 24 月 $1B。</p>
       </div>
     </div>
 
@@ -418,9 +422,9 @@ h1.title {
       <div class="card dark-edge">
         <h3>关键瓶颈</h3>
         <ul>
-          <li>牌照壁垒：<span class="chip">香港 SFC 1 号牌 5–9 月 · 最大卡点</span></li>
-          <li>过户代理：<span class="chip">自建权属登记系统 4–8 月</span>，与 VASP 并行咬合</li>
-          <li>资产端：成为 USDY（美债）/ 凭证型（美股）/ 开曼注册基金（私募），全部自营</li>
+          <li>牌照壁垒：<span class="chip">开曼 VASP 18–24 月 + 香港 SFC 1 号牌 9–15 月（自建）</span></li>
+          <li>过户代理：<span class="chip">自建权属登记系统 9–12 月</span>，与 VASP 并行咬合</li>
+          <li>资产端：成为 USDY（美债）/ 凭证型（美股）/ 开曼注册基金（私募），以自营发行为主</li>
         </ul>
       </div>
     </div>
@@ -438,9 +442,9 @@ h1.title {
     <div class="toc" style="flex:1;">
       <div class="toc-item"><span class="n">01</span><span class="t">产品侧 · 收益类 + 支付类</span></div>
       <div class="toc-item"><span class="n">02</span><span class="t">资金侧 · 入金与 KYC</span></div>
-      <div class="toc-item"><span class="n">03</span><span class="t">合规框架 · 美债 / 美股 / 私募基金 / 港新销售牌照</span></div>
-      <div class="toc-item"><span class="n">04</span><span class="t">平台本体 · Web2 + Web3 双架构</span></div>
-      <div class="toc-item"><span class="n">05</span><span class="t">业务节奏 · 5 阶段时间表</span></div>
+      <div class="toc-item"><span class="n">03</span><span class="t">平台本体 · Web2 + Web3 双架构</span></div>
+      <div class="toc-item"><span class="n">04</span><span class="t">业务节奏 · 路线图与 AUM 目标</span></div>
+      <div class="toc-item"><span class="n">05</span><span class="t">合规框架 · 美债 / 美股 / 私募基金 / 港新销售牌照</span></div>
       <div class="toc-item"><span class="n">06</span><span class="t">营销路径 · 大客户 + 长尾</span></div>
     </div>
   </div>
@@ -666,17 +670,177 @@ h1.title {
 </div>
 
 <!-- ============================================= -->
-<!-- SLIDE 9 — Section 03 Divider                   -->
+<!-- SLIDE 15 — Section 04 Divider                  -->
 <!-- ============================================= -->
 <div class="slide dark">
   <div class="brandmark"><span class="logo"></span><span class="name" style="color:var(--lime)">Oria</span></div>
   <div class="section-divider">
     <div class="section-num">03</div>
-    <div class="section-title">合规框架</div>
-    <div class="section-sub">每类资产独立合规链路、统一开曼离岸架构、全程不碰美国。美债（USDY 同构）、美股/ETF/大宗（凭证型）、私募基金（开曼 SPC + 注册基金）— 三套体系并行，共用开曼发行人 + VASP + 自建过户代理。</div>
+    <div class="section-title">平台本体</div>
+    <div class="section-sub">两条业务路线都要沾：私行路线积淀品牌、交易平台路线规模经济。技术架构分两层 — Web3 去中心化的 oContract + Web2 中心化的 Oria。</div>
   </div>
   <div class="streak"></div>
   <div class="footer"><span>Confidential &amp; Proprietary</span><span>09</span></div>
+</div>
+
+<!-- ============================================= -->
+<!-- SLIDE 17 — 双层架构                            -->
+<!-- ============================================= -->
+<div class="slide">
+  <div class="brandmark"><span class="logo"></span><span class="name">Oria</span></div>
+  <div class="toprule"></div>
+  <div class="toptext">Oria 跑在 oContract 之上 — 上层做品牌、信任、合规；下层做去中心化、规模、长尾。</div>
+  <div class="content">
+    <h1 class="title">平台架构 · Web2 + Web3 双层</h1>
+    <div class="subtitle">链上私行 (Oria) + 裸发动机 (oContract)</div>
+
+    <div class="row-2" style="margin-top:12px;">
+      <div class="card" style="background:#fff; border:1px solid var(--gray-200); border-top:4px solid var(--lime);">
+        <h3>Web2 上层 · Oria</h3>
+        <div class="kv"><b>定位 ·</b> 链上私行</div>
+        <div class="kv"><b>资产生成 ·</b> 仅上 Oria 尽调过、有托管、确保真实性的资产</div>
+        <div class="kv"><b>资产范围 ·</b> 美债、美股、大宗商品、私募基金等传统金融资产</div>
+        <div class="kv"><b>承诺范围 ·</b> 只保证真实性、不保风险</div>
+        <div class="kv"><b>KYC ·</b> $1,000 以下免 KYC · $1,000 以上必须 KYC</div>
+        <p class="note">→ 卖<b>品牌信任</b>给主流用户与机构资金</p>
+      </div>
+      <div class="card" style="background:#fff; border:1px solid var(--gray-200); border-top:4px solid var(--ink);">
+        <h3>Web3 底层 · oContract</h3>
+        <div class="kv"><b>定位 ·</b> Web3 基础引擎 · 裸发动机</div>
+        <div class="kv"><b>能力 ·</b> 只涉及 token 发行 · 不做 KYB / 不做 KYC</div>
+        <div class="kv"><b>玩法 ·</b> 像 pump.fun 一样 · 谁想发 RWA token 就能发</div>
+        <div class="kv"><b>哲学 ·</b> 黑暗丛林 · 愿者生存</div>
+        <div class="kv"><b>商业模式 ·</b> 从发行中抽 <b>1% 手续费</b> · rwa.fun 平台</div>
+        <p class="note">→ 赚<b>规模化抽水</b> · 把长尾发行需求兜起来</p>
+      </div>
+    </div>
+
+    <div class="card lime-edge" style="margin-top:18px;">
+      <h3>两路都沾 · 战略意图</h3>
+      <p style="font-size:13px;">
+        私行路线：<b>品牌积淀长期无形资产</b>，慢但护城河深。
+        交易平台路线：<b>规模经济，但初期靠热度声量爆发</b>。
+        双架构同时跑，Oria 拿信任、oContract 拿流量，长期把 oContract 开放给全网（第五阶段）。
+      </p>
+    </div>
+  </div>
+  <div class="footer"><span>Confidential &amp; Proprietary</span><span>10</span></div>
+</div>
+
+<!-- ============================================= -->
+<!-- SLIDE 18 — Section 05 Divider                  -->
+<!-- ============================================= -->
+<div class="slide dark">
+  <div class="brandmark"><span class="logo"></span><span class="name" style="color:var(--lime)">Oria</span></div>
+  <div class="section-divider">
+    <div class="section-num">04</div>
+    <div class="section-title">业务节奏</div>
+    <div class="section-sub">24 个月路线图按产品线展开，业务线与合规线分离。AUM 目标：3 月 $1M / 6 月 $10M / 12 月 $100M / 24 月 $1B。牌照按最坏情况 + 3–6 月缓冲估时，开曼 VASP（18–24m）与香港 1 号牌为两大卡点。</div>
+  </div>
+  <div class="streak"></div>
+  <div class="footer"><span>Confidential &amp; Proprietary</span><span>11</span></div>
+</div>
+
+<!-- ============================================= -->
+<!-- SLIDE 19 — 5阶段时间线                          -->
+<!-- ============================================= -->
+<div class="slide">
+  <div class="brandmark"><span class="logo"></span><span class="name">Oria</span></div>
+  <div class="toprule"></div>
+  <div class="toptext">业务节奏按产品线展开 · 牌照与业务分离 · 牌照按最坏情况 + 3–6 月缓冲估时 · 开曼 VASP 18–24 月为最大卡点 · 起量靠代销支撑。</div>
+  <div class="content">
+    <h1 class="title">业务节奏 · 路线图与 AUM 目标</h1>
+    <div class="subtitle" style="margin-bottom:8px;">0 → 24 个月 · 产品线只讲上线节奏，合规壁垒独立成行；牌照时间按最坏情况估</div>
+
+    <table class="lane">
+      <tr>
+        <th class="corner">阶段</th>
+        <th>M0–3</th>
+        <th>M3–6</th>
+        <th>M6–9</th>
+        <th>M9–12</th>
+        <th>M12–18</th>
+        <th>M18–24</th>
+      </tr>
+
+      <tr>
+        <td class="prod aum-lbl-cell">AUM 目标<span class="pdesc" style="color:#fff;">里程碑</span></td>
+        <td class="aum">$1M<span class="aum-lbl">3 个月</span></td>
+        <td class="aum">$10M<span class="aum-lbl">6 个月</span></td>
+        <td class="aum empty">—</td>
+        <td class="aum">$100M<span class="aum-lbl">12 个月</span></td>
+        <td class="aum empty">—</td>
+        <td class="aum">$1B<span class="aum-lbl">24 个月</span></td>
+      </tr>
+
+      <tr>
+        <td class="prod">美债<span class="pdesc">主线 · USDY 同构</span></td>
+        <td class="cell key"><span class="milestone">代销起点</span>代销已合规美债产品（Ondo USDY + 香港持牌机构产品）上线；做活期拉种子用户</td>
+        <td class="cell">代销放量；丰富货架（不同期限、不同发行方）</td>
+        <td class="cell">代销持续放量；过户代理系统开发推进</td>
+        <td class="cell">代销稳定；过户代理上线试运行</td>
+        <td class="cell lime"><span class="milestone lime">自持上线</span>开曼 VASP 就位后切换；推出自有 USDY 同构美债 token</td>
+        <td class="cell">自持替换代销 · 美债开放二级交易 + 抵押借贷场景</td>
+      </tr>
+
+      <tr>
+        <td class="prod">美股 / ETF / 大宗<span class="pdesc">凭证型</span></td>
+        <td class="cell key"><span class="milestone">代销起点</span>代销香港持牌机构的美股代币化产品上线（按各产品投资者限制分发）</td>
+        <td class="cell">代销放量；启动自建持股实体筹备</td>
+        <td class="cell">持股实体落地；与老牌券商对接</td>
+        <td class="cell">三方账户控制协议就位；分红机制开发</td>
+        <td class="cell">凭证 token 系统开发完成；待 VASP 就位</td>
+        <td class="cell lime"><span class="milestone lime">自建上线</span>推出自有美股/ETF/大宗 ETP 凭证 token；开放二级交易</td>
+      </tr>
+
+      <tr>
+        <td class="prod">私募基金<span class="pdesc">SPC 通道</span></td>
+        <td class="cell dim">—</td>
+        <td class="cell dim">—</td>
+        <td class="cell">SPC 架构筹备</td>
+        <td class="cell">SPC 架构搭建 · CIMA 申请中</td>
+        <td class="cell lime"><span class="milestone lime">架构就绪</span>SPC 伞形 + 首批注册基金挂牌；外部 GP 接入</td>
+        <td class="cell key"><span class="milestone">通道全量</span>SIBA 托管牌照完成；PE/VC/私募信贷全量；二级拆分给中小投资人</td>
+      </tr>
+
+      <tr>
+        <td class="prod">U 卡<span class="pdesc">支付 · 长尾入口</span></td>
+        <td class="cell dim">—</td>
+        <td class="cell key"><span class="milestone">接入上线</span>接入 U 卡；高频支付带低频活期理财</td>
+        <td class="cell">U 卡 + 活期理财闭环</td>
+        <td class="cell">U 卡规模化，沉淀长尾资金进入收益类产品</td>
+        <td class="cell">KOL 本地化 + 付费投放控 CAC</td>
+        <td class="cell">支付场景基建化，成为长尾获客主入口</td>
+      </tr>
+
+      <tr>
+        <td class="prod" style="background:var(--green);">合规壁垒<span class="pdesc" style="color:#fff;">牌照主线</span></td>
+        <td class="cell"><span class="milestone red">长周期启动</span>启动开曼发行人 + <b>开曼 VASP（18–24m）</b> + <b>香港 1 号牌</b>（9–15m 自建 / 6–9m 收购）；港新借道持牌方先行销售</td>
+        <td class="cell">开曼发行人就位（3–6m）；Reg S/MSB 注册完成；VASP 审查推进中</td>
+        <td class="cell">银行托管开户完成；过户代理系统开发推进；持股实体合规落地</td>
+        <td class="cell">过户代理系统上线试运行；SPC + CIMA 注册进行中；SIBA 托管牌照申请中</td>
+        <td class="cell lime"><span class="milestone lime">壁垒初成</span>开曼 VASP 完成（最坏情况 18m+）· 香港 1 号牌完成（收购路径）；自营机构分销启动</td>
+        <td class="cell"><span class="milestone lime">全套就位</span>SIBA 托管完成；香港 1 号牌完成（自建路径，最坏情况）；oContract 开放全网</td>
+      </tr>
+    </table>
+
+    <p class="note" style="margin-top:6px;">说明：牌照时间按<b>最坏情况 + 3–6 个月缓冲</b>估算。开曼 VASP 按律师口径 18–24 个月为最大卡点，决定自营撮合的真正就绪时间；前 12 个月主要靠代销支撑业务，自营全套到 M12–24 才陆续就位。</p>
+  </div>
+  <div class="footer"><span>Confidential &amp; Proprietary</span><span>12</span></div>
+</div>
+
+<!-- ============================================= -->
+<!-- SLIDE 9 — Section 03 Divider                   -->
+<!-- ============================================= -->
+<div class="slide dark">
+  <div class="brandmark"><span class="logo"></span><span class="name" style="color:var(--lime)">Oria</span></div>
+  <div class="section-divider">
+    <div class="section-num">05</div>
+    <div class="section-title">合规框架</div>
+    <div class="section-sub">每类资产独立合规链路、统一开曼离岸架构、销售范围排除美国市场。美债（USDY 同构）、美股/ETF/大宗（凭证型）、私募基金（开曼 SPC + 注册基金）— 三套体系并行，共用开曼发行人 + VASP + 自建过户代理。</div>
+  </div>
+  <div class="streak"></div>
+  <div class="footer"><span>Confidential &amp; Proprietary</span><span>13</span></div>
 </div>
 
 <!-- ============================================= -->
@@ -708,35 +872,31 @@ h1.title {
     </div>
 
     <div class="card dark-edge" style="margin-top:14px;">
-      <h3>长期方案的关键取舍 · 为什么不做 OUSG、不碰美国</h3>
+      <h3>长期方案的关键取舍 · 为什么不做 OUSG、排除美国</h3>
       <div class="row-2" style="margin-top:4px;">
         <ul>
           <li>放弃 <b>OUSG</b>（特拉华私募基金）→ 砍掉 SEC RIA 那条线</li>
           <li>只做 <b>USDY</b>（非美债权）→ 复用开曼成熟的发行人结构</li>
         </ul>
         <ul>
-          <li>不碰美国 → 砍掉 FINRA / BD / ATS / 美国过户代理整套</li>
+          <li>排除美国 → 砍掉 FINRA / BD / ATS / 美国过户代理整套</li>
           <li>规模上限：小型基金类别装不下散户量级，债权/凭证发行人结构才扛得住</li>
         </ul>
       </div>
     </div>
 
-    <div class="row-3" style="margin-top:14px;">
+    <div class="row-2" style="margin-top:14px;">
       <div class="card green-edge">
         <h3>可服务 <span class="chip green">零售无限制</span></h3>
         <p style="font-size:12px;">LATAM · 东南亚 · 非洲等宽松市场 — 真正的散户零售在这里展开。</p>
       </div>
       <div class="card" style="border-left:4px solid #FFC000; padding-left:18px; background:#fffdf0;">
         <h3>限合格/专业投资者</h3>
-        <p style="font-size:12px;">欧盟 · 英国 · 瑞士等发达市场 — 不碰散户，只服务合格投资者或机构。</p>
-      </div>
-      <div class="card red-edge">
-        <h3>完全隔离 <span class="chip red">永不触碰</span></h3>
-        <p style="font-size:12px;">美国市场 / 美国人 — 地理围栏 + 钱包白名单执行 Reg S。</p>
+        <p style="font-size:12px;">欧盟 · 英国 · 瑞士等发达市场 — 主要服务合格投资者或机构。</p>
       </div>
     </div>
   </div>
-  <div class="footer"><span>Confidential &amp; Proprietary</span><span>10</span></div>
+  <div class="footer"><span>Confidential &amp; Proprietary</span><span>14</span></div>
 </div>
 
 <!-- ============================================= -->
@@ -770,7 +930,7 @@ h1.title {
         <td><span class="way self">自办牌照</span></td>
         <td>发"美债+银行存款支持的有担保债权"token（USDY 同构）</td>
         <td>票据条款须经律师确认不触发开曼投资业务牌照；发行人对名册负法律责任</td>
-        <td>6–10 周</td>
+        <td>3–6 个月</td>
         <td>$110–280K</td>
         <td>$20–50K</td>
       </tr>
@@ -779,8 +939,8 @@ h1.title {
         <td class="lic">Reg S 法律意见书</td>
         <td><span class="way opinion">法律意见</span></td>
         <td>美国证券法安全港，豁免 SEC 注册</td>
-        <td>用了即永不碰美国人；不豁免销售所在国当地证券法</td>
-        <td>8–12 周</td>
+        <td>销售范围排除美国人；不豁免销售所在国当地证券法</td>
+        <td>3–6 个月</td>
         <td>$50–150K</td>
         <td>变更时更新</td>
       </tr>
@@ -790,7 +950,7 @@ h1.title {
         <td><span class="way reg">注册文件</span></td>
         <td>对标 USDY，美元货币服务环节的合规注册</td>
         <td>是注册非牌照，但带 BSA/AML 持续义务；是否触发由律师判断</td>
-        <td>1–2 周 + 体系 4–8 周</td>
+        <td>3–6 个月</td>
         <td>$20–60K</td>
         <td>$30–80K</td>
       </tr>
@@ -802,7 +962,7 @@ h1.title {
         <td class="key"><span class="way self">自办牌照</span></td>
         <td class="key">自营撮合二级交易的合法依据</td>
         <td class="key">不能走注册制；需合规官、授权代表、auditor、交易系统风控与技术审查、持续报告</td>
-        <td class="key">6–12 个月</td>
+        <td class="key"><b>18–24 个月</b></td>
         <td class="key">$300K–1M+</td>
         <td class="key">$200–500K+</td>
       </tr>
@@ -823,8 +983,8 @@ h1.title {
         <td class="lic key">自建权属登记系统<span class="tag">自建</span></td>
         <td class="key"><span class="way build">自建系统</span></td>
         <td class="key">维护几十上百万债权人名册，与链上 token 实时对账</td>
-        <td class="key">发行人责任无法外包；因不碰美国，无需美国 SEC 过户代理注册</td>
-        <td class="key">4–8 个月</td>
+        <td class="key">发行人责任无法外包；销售范围排除美国，无需美国 SEC 过户代理注册</td>
+        <td class="key">9–12 个月</td>
         <td class="key">$300–800K</td>
         <td class="key">$100–300K</td>
       </tr>
@@ -836,7 +996,7 @@ h1.title {
         <td><span class="way partner">合作/外包</span></td>
         <td>持有底层美债/美股（外包，不持牌）</td>
         <td>需通过托管行 KYB/AML 尽调开户（较慢）</td>
-        <td>10–14 周</td>
+        <td>4–8 个月</td>
         <td>无牌照费</td>
         <td>数 bps·AUM</td>
       </tr>
@@ -846,7 +1006,7 @@ h1.title {
         <td><span class="way self">自办</span> <span class="way opinion">+意见</span></td>
         <td>在各零售市场合法分发 token</td>
         <td>散户无限制仅限 LATAM/东南亚/非洲；不碰欧美发达市场散户</td>
-        <td>每国 1–4 个月</td>
+        <td>每国 2–6 个月</td>
         <td>每国 $30–150K</td>
         <td>按国维持</td>
       </tr>
@@ -855,7 +1015,7 @@ h1.title {
         <td>已砍掉</td>
         <td class="lic">SEC RIA / FINRA·BD / ATS / 美国过户代理 / Oasis Pro 式收购</td>
         <td><span class="way none">不适用</span></td>
-        <td>不做 OUSG、不碰美国，整套美国重牌照全部排除</td>
+        <td>不做 OUSG、销售范围排除美国，整套美国重牌照不适用</td>
         <td>这是本方案最大的成本节省点</td>
         <td>—</td>
         <td>省数百万美元 + 6–12 月</td>
@@ -863,7 +1023,7 @@ h1.title {
       </tr>
     </table>
   </div>
-  <div class="footer"><span>Confidential &amp; Proprietary</span><span>11</span></div>
+  <div class="footer"><span>Confidential &amp; Proprietary</span><span>15</span></div>
 </div>
 
 <!-- ============================================= -->
@@ -896,7 +1056,7 @@ h1.title {
         <td class="lic">开曼发行人 + VASP（交易+托管）+ 自建过户代理 + Reg S 边界</td>
         <td><span class="way self">已自办</span></td>
         <td>增设美股凭证产品线；二级交易与名册系统直接扩展覆盖</td>
-        <td>同样不碰美国人；同样地理围栏 + 钱包白名单</td>
+        <td>同样排除美国人；同样地理围栏 + 钱包白名单</td>
         <td>已就位</td>
         <td>增量极小</td>
         <td>增量极小</td>
@@ -909,7 +1069,7 @@ h1.title {
         <td class="key"><span class="way self">自办</span></td>
         <td class="key">持有真实美股/ETF/ETP，做 1:1 抵押担保 token</td>
         <td class="key">实体归你；但实体本身无市场准入，须通过持牌券商开机构账户</td>
-        <td class="key">6–10 周</td>
+        <td class="key">3–6 个月</td>
         <td class="key">$100–300K</td>
         <td class="key">$50–150K</td>
       </tr>
@@ -919,7 +1079,7 @@ h1.title {
         <td class="key"><span class="way partner">合作/外包</span></td>
         <td class="key">提供美股市场准入与底层资产托管 · 1:1 抵押</td>
         <td class="key">成熟通道=Alpaca 类持牌 broker（fintech）；老牌品牌=瑞士持牌银行/大行，门槛更高更慢</td>
-        <td class="key">8–14 周（开户尽调）</td>
+        <td class="key">4–8 个月（开户尽调）</td>
         <td class="key">无牌照费</td>
         <td class="key">托管费按 AUM</td>
       </tr>
@@ -951,7 +1111,7 @@ h1.title {
         <td><span class="way self">自办</span> <span class="way opinion">+意见</span></td>
         <td>确认 token 在各市场属性，补当地分销合规</td>
         <td>EU 视为 MiFID 证券需招股书；但已决定不碰欧美发达市场散户，主攻宽松市场</td>
-        <td>每国 1–4 个月</td>
+        <td>每国 2–6 个月</td>
         <td>每国 $30–150K</td>
         <td>按国维持</td>
       </tr>
@@ -960,7 +1120,7 @@ h1.title {
         <td class="lic">投票权 / 法律股东所有权 / 直接派息</td>
         <td><span class="way none">不适用</span></td>
         <td>需 Superstate 式 SEC 过户代理 + 美国证券法 + 上市公司配合</td>
-        <td>与"不碰美国"冲突且不可行 → 主动舍弃，只做经济敞口</td>
+        <td>与"排除美国"定位冲突 → 主动舍弃，只做经济敞口</td>
         <td>—</td>
         <td>省下整套美国证券合规</td>
         <td>—</td>
@@ -968,7 +1128,7 @@ h1.title {
     </table>
     <p class="note" style="margin-top:6px;">注：美国大宗商品 ETP（如 GLD）本质是交易所交易证券，与美股完全同构，不触发 CFTC 商品现货/期货监管。</p>
   </div>
-  <div class="footer"><span>Confidential &amp; Proprietary</span><span>12</span></div>
+  <div class="footer"><span>Confidential &amp; Proprietary</span><span>16</span></div>
 </div>
 
 <!-- ============================================= -->
@@ -1002,7 +1162,7 @@ h1.title {
         <td><span class="way partner">GP 办理</span></td>
         <td>每个基金=独立 portfolio，破产隔离；你的基金 + 外部 GP 借用各为独立组合</td>
         <td>开曼《私募基金法》/《共同基金法》注册；一级仅专业/合格投资者；2026 新法明确"数字投资 token"定义</td>
-        <td>CIMA 注册 1–2 个月</td>
+        <td>CIMA 注册 3–6 个月</td>
         <td>每基金 $40–100K</td>
         <td>$30–60K</td>
       </tr>
@@ -1024,7 +1184,7 @@ h1.title {
         <td class="key"><span class="way self">自办牌照</span></td>
         <td class="key">托管私募基金底层资产、把关资产真实性 → Oria 品牌护城河</td>
         <td class="key">开曼 SIBA 项下证券投资业务（托管）；须功能独立于 GP/Administrator（独立主体天然满足）</td>
-        <td class="key">2–4 个月</td>
+        <td class="key">6–12 个月</td>
         <td class="key">$150–400K</td>
         <td class="key">$80–200K</td>
       </tr>
@@ -1085,7 +1245,7 @@ h1.title {
       </tr>
     </table>
   </div>
-  <div class="footer"><span>Confidential &amp; Proprietary</span><span>13</span></div>
+  <div class="footer"><span>Confidential &amp; Proprietary</span><span>17</span></div>
 </div>
 
 <!-- ============================================= -->
@@ -1141,7 +1301,7 @@ h1.title {
         <td class="key"><span class="way build">自收</span> <span class="way self">/自建</span></td>
         <td class="key">自持分销资质，直接向香港专业投资者分销开曼产品，掌控分销链路 — 牌照即竞争壁垒</td>
         <td class="key">仅向专业投资者只需事先通知 SFC；须 ≥2 名 RO（≥1 名常驻香港督导、含董事）；最低资本约 HK$5M；自建从零最慢</td>
-        <td class="key">自建 5–9 个月 / 收购 3–6 个月</td>
+        <td class="key">自建 9–15 个月 / 收购 6–9 个月</td>
         <td class="key">自建 $0.85–1.7M / 收购 $1.05–5.15M</td>
         <td class="key">$0.56–1.12M</td>
       </tr>
@@ -1163,7 +1323,7 @@ h1.title {
         <td><span class="way build">自收</span> <span class="way partner">/借道</span></td>
         <td>向新加坡机构/合格投资者分销证券型 token 的资质</td>
         <td>每活动 ≥2 名新加坡境内代表；私募配售豁免完整招股书；技术中立、穿透实质</td>
-        <td>收购/借道 3–6 个月</td>
+        <td>自建 18–24m / 收购 6–9m</td>
         <td>自建 $1–4M / 收购 $2–6M</td>
         <td>$0.3–0.8M</td>
       </tr>
@@ -1190,150 +1350,6 @@ h1.title {
       </tr>
     </table>
   </div>
-  <div class="footer"><span>Confidential &amp; Proprietary</span><span>14</span></div>
-</div>
-
-<!-- ============================================= -->
-<!-- SLIDE 15 — Section 04 Divider                  -->
-<!-- ============================================= -->
-<div class="slide dark">
-  <div class="brandmark"><span class="logo"></span><span class="name" style="color:var(--lime)">Oria</span></div>
-  <div class="section-divider">
-    <div class="section-num">04</div>
-    <div class="section-title">平台本体</div>
-    <div class="section-sub">两条业务路线都要沾：私行路线积淀品牌、交易平台路线规模经济。技术架构分两层 — Web3 去中心化的 oContract + Web2 中心化的 Oria。</div>
-  </div>
-  <div class="streak"></div>
-  <div class="footer"><span>Confidential &amp; Proprietary</span><span>15</span></div>
-</div>
-
-<!-- ============================================= -->
-<!-- SLIDE 17 — 双层架构                            -->
-<!-- ============================================= -->
-<div class="slide">
-  <div class="brandmark"><span class="logo"></span><span class="name">Oria</span></div>
-  <div class="toprule"></div>
-  <div class="toptext">Oria 跑在 oContract 之上 — 上层做品牌、信任、合规；下层做去中心化、规模、长尾。</div>
-  <div class="content">
-    <h1 class="title">平台架构 · Web2 + Web3 双层</h1>
-    <div class="subtitle">链上私行 (Oria) + 裸发动机 (oContract)</div>
-
-    <div class="row-2" style="margin-top:12px;">
-      <div class="card" style="background:#fff; border:1px solid var(--gray-200); border-top:4px solid var(--lime);">
-        <h3>Web2 上层 · Oria</h3>
-        <div class="kv"><b>定位 ·</b> 链上私行</div>
-        <div class="kv"><b>资产生成 ·</b> 仅上 Oria 尽调过、有托管、确保真实性的资产</div>
-        <div class="kv"><b>资产范围 ·</b> 美债、美股、大宗商品、私募基金等传统金融资产</div>
-        <div class="kv"><b>承诺范围 ·</b> 只保证真实性、不保风险</div>
-        <div class="kv"><b>KYC ·</b> $1,000 以下免 KYC · $1,000 以上必须 KYC</div>
-        <p class="note">→ 卖<b>品牌信任</b>给主流用户与机构资金</p>
-      </div>
-      <div class="card" style="background:#fff; border:1px solid var(--gray-200); border-top:4px solid var(--ink);">
-        <h3>Web3 底层 · oContract</h3>
-        <div class="kv"><b>定位 ·</b> Web3 基础引擎 · 裸发动机</div>
-        <div class="kv"><b>能力 ·</b> 只涉及 token 发行 · 不做 KYB / 不做 KYC</div>
-        <div class="kv"><b>玩法 ·</b> 像 pump.fun 一样 · 谁想发 RWA token 就能发</div>
-        <div class="kv"><b>哲学 ·</b> 黑暗丛林 · 愿者生存</div>
-        <div class="kv"><b>商业模式 ·</b> 从发行中抽 <b>1% 手续费</b> · rwa.fun 平台</div>
-        <p class="note">→ 赚<b>规模化抽水</b> · 把长尾发行需求兜起来</p>
-      </div>
-    </div>
-
-    <div class="card lime-edge" style="margin-top:18px;">
-      <h3>两路都沾 · 战略意图</h3>
-      <p style="font-size:13px;">
-        私行路线：<b>品牌积淀长期无形资产</b>，慢但护城河深。
-        交易平台路线：<b>规模经济，但初期靠热度声量爆发</b>。
-        双架构同时跑，Oria 拿信任、oContract 拿流量，长期把 oContract 开放给全网（第五阶段）。
-      </p>
-    </div>
-  </div>
-  <div class="footer"><span>Confidential &amp; Proprietary</span><span>16</span></div>
-</div>
-
-<!-- ============================================= -->
-<!-- SLIDE 18 — Section 05 Divider                  -->
-<!-- ============================================= -->
-<div class="slide dark">
-  <div class="brandmark"><span class="logo"></span><span class="name" style="color:var(--lime)">Oria</span></div>
-  <div class="section-divider">
-    <div class="section-num">05</div>
-    <div class="section-title">业务节奏</div>
-    <div class="section-sub">18 个月路线图按产品线展开：美债（代销 → 自建通道 → 切换自持）为主线，U 卡、美股/ETF/大宗、私募 PE/VC 依次接入，合规壁垒（香港 1 号牌）贯穿始终。</div>
-  </div>
-  <div class="streak"></div>
-  <div class="footer"><span>Confidential &amp; Proprietary</span><span>17</span></div>
-</div>
-
-<!-- ============================================= -->
-<!-- SLIDE 19 — 5阶段时间线                          -->
-<!-- ============================================= -->
-<div class="slide">
-  <div class="brandmark"><span class="logo"></span><span class="name">Oria</span></div>
-  <div class="toprule"></div>
-  <div class="toptext">业务节奏按产品线展开 — 早期代销已合规的美债/美股产品（Ondo + 香港持牌机构）快速起量，再建自营发行通道切换自持；私募 / U 卡依次接入。</div>
-  <div class="content">
-    <h1 class="title">业务节奏 · 产品线路线图</h1>
-    <div class="subtitle" style="margin-bottom:8px;">0 → 18 个月 · 按产品类型展开 · 美债为主线（代销 → 自建通道 → 切换自持）</div>
-
-    <table class="lane">
-      <tr>
-        <th class="corner">产品线 / 阶段</th>
-        <th>M0–3 构建期</th>
-        <th>M3–6 起量期</th>
-        <th>M6–9 补全期</th>
-        <th>M9–12 稳定期</th>
-        <th>M12–18 基建化</th>
-      </tr>
-
-      <tr>
-        <td class="prod">美债<span class="pdesc">主线 · USDY 同构</span></td>
-        <td class="cell key"><span class="milestone">代销起点</span>代销已合规美债产品（Ondo USDY + 香港持牌机构产品）快速上线；做活期拉种子用户；不签排他</td>
-        <td class="cell lime"><span class="milestone lime">通道建立</span>自营开曼发行通道建成；<b>切换自持发行</b>、收益不再打折</td>
-        <td class="cell lime">自持产品全面替换代销；过户代理名册稳定运行</td>
-        <td class="cell">美债开放二级交易 + 抵押借贷；港新机构分销放量</td>
-        <td class="cell">美债作为平台压舱资产；规模化、低成本运营</td>
-      </tr>
-
-      <tr>
-        <td class="prod">美股 / ETF / 大宗<span class="pdesc">凭证型</span></td>
-        <td class="cell key"><span class="milestone">代销起点</span>代销香港持牌机构的美股代币化产品快速上线（按各产品投资者限制分发）</td>
-        <td class="cell lime">代销放量；启动自建持股实体筹备</td>
-        <td class="cell key"><span class="milestone">自建上线</span>自建持股实体 + 老牌券商托管；推出自有美股/ETF/大宗 ETP 凭证 token</td>
-        <td class="cell lime">凭证型资产开放二级交易；分红再投资进净值</td>
-        <td class="cell">复用开曼 + VASP 架构，逐步扩品种</td>
-      </tr>
-
-      <tr>
-        <td class="prod">私募基金<span class="pdesc">SPC 通道</span></td>
-        <td class="cell dim">—</td>
-        <td class="cell lime"><span class="milestone lime">架构就绪</span>开曼 SPC 伞形 + 注册基金就绪；托管主体 SIBA 牌照启动</td>
-        <td class="cell">首批基金接入（自有 + 外部 GP 借用通道）</td>
-        <td class="cell key"><span class="milestone">通道全量</span>托管主体 SIBA 完成；PE/VC/私募信贷全量；二级拆分给中小投资人</td>
-        <td class="cell">私募通道基建化；做市主体独立运营</td>
-      </tr>
-
-      <tr>
-        <td class="prod">U 卡<span class="pdesc">支付 · 长尾入口</span></td>
-        <td class="cell dim">—</td>
-        <td class="cell key"><span class="milestone">接入上线</span>接入 U 卡；高频支付带低频活期理财，快速拉客户规模</td>
-        <td class="cell lime">U 卡 + 活期理财闭环；KOL 本地化推广</td>
-        <td class="cell">U 卡规模化，沉淀长尾资金进入收益类产品</td>
-        <td class="cell">支付场景基建化，成为长尾获客主入口</td>
-      </tr>
-
-      <tr>
-        <td class="prod" style="background:var(--green);">合规壁垒<span class="pdesc" style="color:#fff;">牌照主线</span></td>
-        <td class="cell"><span class="milestone red">长周期启动</span>启动开曼发行人 + VASP；<b>启动香港 1 号牌申请</b>（最大卡点）</td>
-        <td class="cell">美债牌照体系完成 + 自建过户代理；港新借道持牌方先行销售</td>
-        <td class="cell">VASP 交易+托管就位；持股实体合规落地</td>
-        <td class="cell lime"><span class="milestone lime">壁垒成型</span>香港 1 号牌持牌完成 · 自营机构分销</td>
-        <td class="cell">oContract 开放全网（待品牌与信任建立后）</td>
-      </tr>
-    </table>
-
-    <p class="note" style="margin-top:8px;">早期代销策略：M0–3 同时代销已合规的美债与美股产品（Ondo USDY + 香港持牌机构产品），零牌照负担、快速起量并丰富货架；M3–6 起自建发行通道、逐步切换自持（收益与风险自控）。私募/U 卡在通道与合规就位后接入。香港 1 号牌为长周期最大卡点，第一阶段即启动。</p>
-  </div>
   <div class="footer"><span>Confidential &amp; Proprietary</span><span>18</span></div>
 </div>
 
@@ -1352,106 +1368,68 @@ h1.title {
 </div>
 
 <!-- ============================================= -->
-<!-- SLIDE 21 — 大客户营销策略                       -->
+<!-- SLIDE 21 — 营销策略（大客户 + 长尾合并）             -->
 <!-- ============================================= -->
 <div class="slide">
   <div class="brandmark"><span class="logo"></span><span class="name">Oria</span></div>
   <div class="toprule"></div>
-  <div class="toptext">大客户两套打法 — 带单模式针对固收资产做收益分层；投顾 GP/EAM 模式针对有风险资产做客户教育。</div>
+  <div class="toptext">大客户走带单与投顾返佣，长尾客户走 U 卡高频带低频 + KOL 本地化 + 付费投放控 CAC。</div>
   <div class="content">
-    <h1 class="title">营销 · 大客户策略</h1>
-    <div class="subtitle">带单模式 (固收) + 投顾 GP/EAM 模式 (风险资产)</div>
+    <h1 class="title">营销 · 大客户 + 长尾</h1>
+    <div class="subtitle">大客户 = 带单（固收）+ 投顾 GP/EAM（风险资产）· 长尾 = 高频带低频 + KOL + 付费投放</div>
 
-    <div class="row-2" style="margin-top:12px;">
+    <div style="font-size:11px; font-weight:800; color:var(--green); margin-top:10px; letter-spacing:0.4px;">大客户策略</div>
+    <div class="row-2" style="margin-top:4px;">
       <div class="card lime-edge">
-        <h3>带单模式 · 针对固收资产</h3>
-        <p style="font-size:13px; margin-bottom:8px;">以 3% 收益的美债资产为例 — 把它拆分成：</p>
-        <div class="row-2" style="gap:10px;">
-          <div style="background:#fff; border-radius:6px; padding:10px;">
-            <div class="stat"><span class="n" style="color:var(--green);">3.5%</span><span class="lbl">高收益 · 车队长</span></div>
-          </div>
-          <div style="background:#fff; border-radius:6px; padding:10px;">
-            <div class="stat"><span class="n" style="color:#666;">2.5%</span><span class="lbl">低收益 · 普通用户</span></div>
-          </div>
+        <h3>带单模式 · 固收资产</h3>
+        <p style="font-size:11.5px; margin-bottom:6px;">以 3% 收益的美债资产为例，分层为高/低收益：</p>
+        <div style="display:flex; gap:14px; align-items:center;">
+          <div class="stat" style="margin:0;"><span class="n" style="color:var(--green); font-size:22px;">3.5%</span><span class="lbl">高 · 车队长</span></div>
+          <div class="stat" style="margin:0;"><span class="n" style="color:#666; font-size:22px;">2.5%</span><span class="lbl">低 · 普通用户</span></div>
         </div>
-        <p class="note" style="margin-top:10px;">抓币圈熊市无处可去的 U 资金 · 美债资产做<b>浮动收益</b>，1y 美债收益看涨可吸引更多币圈资金。</p>
+        <p class="note" style="margin-top:6px; font-size:11px;">抓币圈熊市的 U 资金 · 美债浮动收益吸引更多币圈资金。</p>
       </div>
       <div class="card lime-edge">
-        <h3>投顾 GP/EAM 模式 · 针对风险资产</h3>
-        <p style="font-size:13px;">适用品类：股票 · 大宗商品 · ETF · 私募基金</p>
-        <div style="margin-top:10px;">
-          <div class="persona" style="padding:8px 0;">
-            <div class="icon">📚</div>
-            <div class="body"><div class="ttl">外部投顾合作</div><div class="desc">让专业投顾做好客户教育</div></div>
-          </div>
-          <div class="persona" style="padding:8px 0;">
-            <div class="icon">💰</div>
-            <div class="body"><div class="ttl">手续费返佣</div><div class="desc">从手续费中分成给投顾</div></div>
-          </div>
-          <div class="persona" style="padding:8px 0; border-bottom:none;">
-            <div class="icon">🔗</div>
-            <div class="body"><div class="ttl">复用 GP/EAM 通道</div><div class="desc">同一套架构服务资金侧与营销侧</div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="footer"><span>Confidential &amp; Proprietary</span><span>20</span></div>
-</div>
-
-<!-- ============================================= -->
-<!-- SLIDE 22 — 长尾客户营销策略                     -->
-<!-- ============================================= -->
-<div class="slide">
-  <div class="brandmark"><span class="logo"></span><span class="name">Oria</span></div>
-  <div class="toprule"></div>
-  <div class="toptext">长尾三板斧 — U 卡高频带低频 + KOL 本地化 + 付费投放控 CAC，关键指标 CAC ≤ 6 个月活期净收益。</div>
-  <div class="content">
-    <h1 class="title">营销 · 长尾客户策略</h1>
-    <div class="subtitle">高频带低频 · KOL 本地化 · 付费投放</div>
-
-    <div class="row-3" style="margin-top:12px;">
-      <div class="card" style="border-top:4px solid var(--lime); background:#fff; border:1px solid var(--gray-200); border-top:4px solid var(--lime);">
-        <h3>高频带低频</h3>
-        <ul>
-          <li>U 卡手续费<b>平进平出</b></li>
-          <li>消费送积分 · 积分可给活期加息</li>
-          <li>消费越多 → 活期收益越高</li>
-          <li>把 U 卡用户圈进来做活期理财</li>
-          <li>仿支付宝模型 · 活期转理财</li>
+        <h3>投顾 GP/EAM · 风险资产</h3>
+        <p style="font-size:11.5px;">适用：股票 · 大宗 · ETF · 私募基金</p>
+        <ul style="font-size:11.5px; margin-top:4px;">
+          <li>外部投顾合作 · 做客户教育</li>
+          <li>手续费返佣 · 与投顾分成</li>
+          <li>复用 GP/EAM 通道 · 一套架构服务资金与营销</li>
         </ul>
       </div>
-      <div class="card" style="border-top:4px solid var(--lime); background:#fff; border:1px solid var(--gray-200); border-top:4px solid var(--lime);">
+    </div>
+
+    <div style="font-size:11px; font-weight:800; color:var(--green); margin-top:12px; letter-spacing:0.4px;">长尾策略</div>
+    <div class="row-3" style="margin-top:4px;">
+      <div class="card" style="border:1px solid var(--gray-200); border-top:4px solid var(--lime); background:#fff;">
+        <h3>高频带低频</h3>
+        <ul style="font-size:11px;">
+          <li>U 卡手续费 <b>平进平出</b></li>
+          <li>消费送积分 · 积分给活期加息</li>
+          <li>把 U 卡用户圈进活期理财（仿支付宝模型）</li>
+        </ul>
+      </div>
+      <div class="card" style="border:1px solid var(--gray-200); border-top:4px solid var(--lime); background:#fff;">
         <h3>KOL 本地化</h3>
-        <ul>
-          <li><b>内容共创</b> · AMA / 教程 / 产品解读</li>
-          <li><b>推荐返佣</b> · 按手续费分成</li>
-          <li><b>社群运营</b> · Discord / Telegram</li>
+        <ul style="font-size:11px;">
+          <li>内容共创 · 推荐返佣 · 社群运营</li>
           <li>覆盖 LATAM / 东南亚 / 非洲</li>
           <li>本地语言 · 本地话题 · 本地信任</li>
         </ul>
       </div>
-      <div class="card" style="border-top:4px solid var(--lime); background:#fff; border:1px solid var(--gray-200); border-top:4px solid var(--lime);">
+      <div class="card" style="border:1px solid var(--gray-200); border-top:4px solid var(--lime); background:#fff;">
         <h3>付费投放</h3>
-        <ul>
-          <li>Twitter / X · YouTube · Telegram · Reddit</li>
-          <li>播客赞助 · CoinDesk · The Block 等币圈媒体</li>
+        <ul style="font-size:11px;">
+          <li>Twitter / YouTube / Telegram / Reddit / 币圈媒体</li>
           <li>按 <b>CAC / LTV</b> 做预算分配</li>
-          <li>关键指标 <span class="chip">CAC ≤ U卡 6m 活期净收益</span></li>
-          <li>冷启动重金 · 规模化后让位 KOL 与口碑</li>
+          <li>冷启动重金，规模化后让位 KOL 口碑</li>
         </ul>
+        <p style="font-size:10.5px; color:var(--green); font-weight:700; margin-top:4px;">CAC ≤ U 卡 6m 活期净收益</p>
       </div>
     </div>
-
-    <div class="card dark-edge" style="margin-top:16px;">
-      <h3>三板斧 · 时序与预算</h3>
-      <p style="font-size:13px; color:#444;">
-        冷启动期 (Phase 1-2)：<b>付费投放重金 + KOL 头部破圈</b>，快速建立认知。
-        规模化后 (Phase 3+)：<b>付费投放让位 KOL 与口碑裂变</b>，CAC 持续下降，把高频 U 卡用户沉淀为活期理财长期资金，LTV 持续放大。
-      </p>
-    </div>
   </div>
-  <div class="footer"><span>Confidential &amp; Proprietary</span><span>21</span></div>
+  <div class="footer"><span>Confidential &amp; Proprietary</span><span>20</span></div>
 </div>
 
 <!-- ============================================= -->
@@ -1462,7 +1440,7 @@ h1.title {
   <div class="cover-tag">Grow Boundlessly!</div>
   <h1>THANK YOU!</h1>
   <div class="streak"></div>
-  <div class="footer"><span>Confidential &amp; Proprietary</span><span>22</span></div>
+  <div class="footer"><span>Confidential &amp; Proprietary</span><span>21</span></div>
 </div>
 
 </div>
